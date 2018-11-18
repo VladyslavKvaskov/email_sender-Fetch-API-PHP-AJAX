@@ -1,0 +1,32 @@
+﻿<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Email Sender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+
+    <form class="post-form" aria-label="send email" role="form">
+        <label for="email">Eamil To:</label>
+        <input type="email" class="email" id="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" class="subject" id="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea class="message" id="message" required></textarea>
+
+        <input type="submit" class="submit" value="Send">
+    </form>
+    
+    <div class="mail-data"></div>
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
