@@ -1,0 +1,55 @@
+form {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgb(0, 58, 153);
+    
+}
+
+label, input, textarea {
+
+    width: 100%;
+    margin: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold; 
+    
+}
+
+.submit {
+
+    min-height: 48px;
+    min-width: 48px;
+    cursor: pointer;
+    color: rgb(0, 9, 82);
+    background-color: rgb(196, 246, 255);
+    
+}
+
+input, textarea {
+
+    background-color: rgb(0, 172, 205);
+    border: 2px solid rgb(0, 202, 255);
+
+}
+
+input:focus, textarea:focus {
+
+    background-color: rgb(217, 249, 255);
+    color: rgb(0, 9, 82);
+    
+}
+
+textarea{
+
+    height: 72px;
+    
+}
+
+input:-webkit-autofill {
+
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 172, 205) inset;
+    
+}
