@@ -14,15 +14,16 @@ submit.onclick = () => {
         submit.type = 'button';
 
         fetch('php/email_sender.php', {
-            method: 'POST',
-            'Accept': 'application/json',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'email_message=' + JSON.stringify({
-                  'mail_to': email_to.value,
-                  'mail_subject': subject.value,
-                  'mail_message': message.value
-            })
+             method:   'POST',
+             'Accept': 'application/json',
+             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+             body:     'email_message=' + JSON.stringify({
+                       'mail_to': email_to.value,
+                       'mail_subject': subject.value,
+                       'mail_message': message.value
+                      })
         }).then(response => response.json()).then(data => {
+            
             if (data.result == 'success') {
                 mail_data.innerHTML = `Email was successfully sent to ${data.email_to}<br>` + mail_data.innerHTML;
                 console.log(data);
