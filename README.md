@@ -25,4 +25,4 @@ Here I've got the project that can be used to send emails using fetch API or XML
 In the .htaccess file on the server, I wrote
                                                     
     Header set Access-Control-Allow-Origin "*"
-so you can access everything on the https://marinmover.com/ using fetch API.
+so you can access everything on the https://marinmover.com/ using fetch API. You can access https://marinmover.com/email_sender/php/email_sender.php using fetch API.
