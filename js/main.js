@@ -29,7 +29,7 @@ submit.onclick = () => {
                 console.log(data);
             }
             else
-                mail_data = 'Error sending an email!<br>' + mail_data.innerHTML;
+                mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
 
         })
     }
