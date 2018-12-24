@@ -3,9 +3,9 @@ Here I've got the project that can be used to send emails using fetch API or XML
 
 ## A code for sending emails
     fetch('https://marinmover.com/email_sender/php/email_sender.php', {
-                 method:   'POST',
-                 'Accept': 'application/json',
-                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                 method:'POST',
+                 'Accept':'application/json',
+                 headers:{'Content-Type': 'application/x-www-form-urlencoded'},
                  body:'email_message=' + JSON.stringify({
                       'mail_to':'email to send to',
                       'mail_subject':'some subject',
