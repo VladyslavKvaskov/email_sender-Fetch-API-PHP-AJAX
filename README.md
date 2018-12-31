@@ -7,7 +7,7 @@ Here I've got the project that can be used to send emails using fetch API or XML
                  'Accept':'application/json',
                  headers:{'Content-Type': 'application/x-www-form-urlencoded'},
                  body:'email_message=' + JSON.stringify({
-                      'mail_to':'email to send to',
+                      'mail_to':'your_email@email.com',
                       'mail_subject':'some subject',
                       'mail_message': 'some message'
                        })
